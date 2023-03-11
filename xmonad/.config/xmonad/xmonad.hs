@@ -10,8 +10,19 @@ import XMonad.Layout.IndependentScreens
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import XMonad.Hooks.InsertPosition (insertPosition, Focus(Newer), Position(End))
+import XMonad.Layout.Spacing ( spacingRaw, Border(Border) )
+import XMonad.Layout.Gaps
+    ( Direction2D(D, L, R, U),
+      gaps,
+      setGaps,
+      GapMessage(DecGap, ToggleGaps, IncGap) )
 
 myBorderWidth   = 2
+myGapLeft = 10
+myGapRight = 10
+myGapTop = 46
+myGapBottom = 10
+
 myNormalBorderColor  = "#3b4252"
 myFocusedBorderColor = "#bc96da"
 
@@ -137,13 +148,26 @@ rofi_launcher = spawn "rofi -show drun -icon-theme 'Papirus' -show-icons"
 flameshotcmd = spawn "flameshot gui"
 shootercmd = spawn "xfce4-screenshooter"
 
+myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full)
+  where
+     -- default tiling algorithm partitions the screen into two panes
+     tiled   = Tall nmaster delta ratio
+
+     -- The default number of windows in the master pane
+     nmaster = 1
+
+     -- Default proportion of screen occupied by master pane
+     ratio   = 3/5
+
+     -- Percent of screen to increment by when resizing panes
+     delta   = 3/100
 
 main = do
     xmproc0 <- spawnPipe ("xmobar -x 0 ~/.config/xmobar/xmobarrc")
     xmproc1 <- spawnPipe ("xmobar -x 1 ~/.config/xmobar/xmobarrc")
     xmonad $ docks def
         { manageHook = myManageHook <+> manageHook def -- make sure to include myManageHook definition from above
-        , layoutHook = avoidStruts  $  layoutHook def
+        , layoutHook = gaps [(L,myGapLeft), (R,myGapRight), (U,myGapTop), (D,myGapBottom)] $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ myLayout
         , startupHook = myStartupHook
         , terminal = myTerminal
         , workspaces = withScreens 2 ["1", "2", "3"]
