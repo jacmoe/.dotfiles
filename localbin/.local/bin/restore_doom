@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "Restoring Doom-Emacs directories ..."
+rm -rf ~/.doom.emacs.d/
+rm -rf ~/.doom.d/
+rm -rf ~/.pdoom.emacs.d/
+rm -rf ~/.p.doom.d/
+cp -r ~/.doom_backup/doom-emacs-cpy/ ~/.doom.emacs.d/
+cp -r ~/.doom_backup/doom-d-cpy/ ~/.doom.d/
+cp -r ~/.doom_backup/pdoom-emacs-cpy/ ~/.pdoom.emacs.d/
+cp -r ~/.doom_backup/p-d-cpy/ ~/.p.doom.d/
+echo "Done!"
+echo ""

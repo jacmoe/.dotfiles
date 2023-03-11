@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+echo "Backing up Doom-Emacs directories ..."
+rm -rf ~/.doom_backup/doom-emacs-cpy/
+rm -rf ~/.doom_backup/doom-d-cpy/
+rm -rf ~/.doom_backup/pdoom-emacs-cpy/
+rm -rf ~/.doom_backup/p-d-cpy/
+echo "Copying Hotel California ..."
+cp -r ~/.doom.emacs.d/ ~/.doom_backup/doom-emacs-cpy/
+cp -r ~/.doom.d/ ~/.doom_backup/doom-d-cpy/
+echo "Copying Programming Emacs ..."
+cp -r ~/.pdoom.emacs.d/ ~/.doom_backup/pdoom-emacs-cpy/
+cp -r ~/.p.doom.d/ ~/.doom_backup/p-d-cpy/
+echo "Done!"
+echo ""

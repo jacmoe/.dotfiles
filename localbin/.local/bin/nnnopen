@@ -1,0 +1,42 @@
+#!/usr/bin/sh
+
+if [ ! -f "$1" ];then
+	exit
+fi
+
+TERM=kitty
+MUSIC=mocp
+VIDEO=mpv
+
+mime=$(file -b --mime-type "$1")
+echo "$mime"
+
+if [ "${1#*.}" = "m3u" ];then
+	${MUSIC} "$1"
+elif [ "$mime" = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ];then
+	libreoffice "$1"
+elif [ "$mime" = "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ];then
+	libreoffice "$1"
+elif [ "${1#*.}" = "m4a" ];then
+	${TERM} ${MUSIC} "$1"
+elif [ "$mime" = "text/html" ];then
+	${BROWSER} "$1"
+elif [ "$mime" = "text/plain" ];then
+	 $TERM emacsclient -c "$1"
+elif [ "${mime%/*}" = "text" ];then
+	${TERM} emacsclient -c "$1"
+elif [ "${mime%/*}" = "image" ];then
+	nsxiv "$1" "$PWD"
+elif [ "$mime" = "audio/mpegapplication/octet-stream" ];then
+	${TERM} ${MUSIC} "$1"
+elif [ "$mime" = "application/pdf" ];then
+	zathura "$1"
+elif [ "$mime" = "application/x-mobipocket-ebook" ];then
+	zathura "$1"
+elif [ "$mime" = "application/epub+zip" ];then
+	zathura "$1"
+elif [ "${mime%/*}" = "audio" ];then
+	${TERM} ${MUSIC} "$1"
+elif [ "${mime%/*}" = "video" ];then
+	${VIDEO} "$1"
+fi

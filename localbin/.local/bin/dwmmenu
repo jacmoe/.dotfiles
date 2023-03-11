@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rofi -dmenu -nb "#ac3ba8" -nf "#eeeeee" -sb "#2E3440" -sf "#eeeeee" -fn "Ubuntu-12" "$@"
