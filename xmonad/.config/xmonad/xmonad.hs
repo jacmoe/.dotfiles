@@ -56,6 +56,7 @@ main = do
         , ((0, xK_Print), flameshotcmd)
         , ((mod4Mask .|. controlMask, xK_x), spawn "exec ~/.local/bin/apps.sh")
         , ((mod4Mask .|. controlMask, xK_u), spawn "exec ~/.local/bin/utils.sh")
+        , ((mod4Mask .|. controlMask, xK_e), spawn "rofi -modi emoji -show emoji -kb-custom-1 Ctrl+C")
         , ((mod4Mask .|. shiftMask, xK_q), spawn "exec ~/.local/bin/powermenu")
         , ((mod4Mask, xK_Print), shootercmd)
         , ((mod4Mask, xK_Print), shootercmd)
