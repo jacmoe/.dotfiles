@@ -54,12 +54,8 @@ myStartupHook = do
   spawnOnce "picom --experimental-backends"
   spawnOnce "dunst"
   setWMName "LG3D"
-  spawnOnce "xdotool key Super+w"
-  spawnOnce "xdotool key Super+1"
-
-rofi_launcher = spawn "rofi -show drun -icon-theme 'Papirus' -show-icons"
-flameshotcmd = spawn "flameshot gui"
-shootercmd = spawn "xfce4-screenshooter"
+  spawn "xdotool key Super+w"
+  spawn "xdotool key Super+1"
 
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
@@ -135,6 +131,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
         | (key, sc) <- zip [xK_f, xK_w] [0..]
         , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
+
+
+rofi_launcher = spawn "rofi -show drun -icon-theme 'Papirus' -show-icons"
+flameshotcmd = spawn "flameshot gui"
+shootercmd = spawn "xfce4-screenshooter"
 
 
 main = do
