@@ -1,0 +1,92 @@
+Config { 
+
+   -- appearance
+     font =         "Overpass Mono 10"
+   , bgColor =      "#222222"
+   , fgColor =      "#ffffff"
+   , position =     TopSize C 100 36
+   , border =       BottomB
+   , borderColor =  "#646464"
+   , alpha = 160
+
+   -- layout
+   , sepChar =  "%"   -- delineator between plugin names and straight text
+   , alignSep = "}{"  -- separator between left-right alignment
+
+   -- general behavior
+   , lowerOnStart =     True    -- send to bottom of window stack on start
+   , hideOnStart =      False   -- start with window unmapped (hidden)
+   , allDesktops =      True    -- show on all desktops
+   , overrideRedirect = True    -- set the Override Redirect flag (Xlib)
+   , pickBroadest =     False   -- choose widest display (multi-monitor)
+   , persistent =       True    -- enable/disable hiding (True = disabled)
+
+   -- plugins
+   --   Numbers can be automatically colored according to their value. xmobar
+   --   decides color based on a three-tier/two-cutoff system, controlled by
+   --   command options:
+   --     --Low sets the low cutoff
+   --     --High sets the high cutoff
+   --
+   --     --low sets the color below --Low cutoff
+   --     --normal sets the color between --Low and --High cutoffs
+   --     --High sets the color above --High cutoff
+   --
+   --   The --template option controls how the plugin is displayed. Text
+   --   color can be set by enclosing in <fc></fc> tags. For more details
+   --   see http://projects.haskell.org/xmobar/#system-monitor-plugins.
+   , commands = 
+        -- memory usage monitor
+        [ Run Memory         [ "--template" ,"Mem: <usedratio>%"
+                             , "--Low"      , "20"        -- units: %
+                             , "--High"     , "70"        -- units: %
+                             , "-m"         , "2"
+                             , "--low"      , "white"
+                             , "--normal"   , "white"
+                             , "--high"     , "orange"
+                             ] 10
+
+        -- cpu monitor
+        , Run Cpu            [ "--template" ,"CPU: <total>%"
+                             , "--Low"      , "20"        -- units: %
+                             , "--High"     , "70"        -- units: %
+                             , "-m"         , "2"
+                             , "--low"      , "white"
+                             , "--normal"   , "white"
+                             , "--high"     , "orange"
+                             ] 10
+        
+        -- battery monitor
+        , Run Battery        [ "--template" , "Batt: <acstatus>"
+                             , "--Low"      , "20"        -- units: %
+                             , "--High"     , "80"        -- units: %
+                             , "-m"         , "2"
+                             , "--low"      , "orange"
+                             , "--normal"   , "white"
+                             , "--high"     , "orange"
+
+                             , "--" -- battery specific options
+                                       -- discharging status
+                                       , "-o"	, "<left>% (<timeleft>)"
+                                       -- AC "on" status
+                                       , "-O"	, "Charging"
+                                       -- charged status
+                                       , "-i"	, "Charged"
+                             ] 50
+
+        -- time and date indicator 
+        --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
+        , Run Date           "%d/%m-%Y (%a) %H:%M" "date" 10
+
+        -- keyboard layout indicator
+        , Run Kbd            [ ("us(colemak)" , "us(colemak)")
+                             , ("no(colemak)" , "no(colemak)")
+                             , ("us", "us(qwerty)")
+                             , ("no", "no(qwerty)")
+                             ]
+        , Run StdinReader
+        ]
+   , template = "%StdinReader% }{ %memory% | %cpu% | %battery% | %date% | %kbd% "
+   }
+
+
