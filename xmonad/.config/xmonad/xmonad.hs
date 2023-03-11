@@ -1,4 +1,6 @@
 import XMonad
+import XMonad.Layout.Fullscreen
+    ( fullscreenEventHook, fullscreenManageHook, fullscreenSupport, fullscreenFull )
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.Run(spawnPipe)
@@ -165,7 +167,7 @@ myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full)
 main = do
     xmproc0 <- spawnPipe ("xmobar -x 0 ~/.config/xmobar/xmobarrc")
     xmproc1 <- spawnPipe ("xmobar -x 1 ~/.config/xmobar/xmobarrc")
-    xmonad $ docks def
+    xmonad $ fullscreenSupport $ docks def
         { manageHook = myManageHook <+> manageHook def -- make sure to include myManageHook definition from above
         , layoutHook = gaps [(L,myGapLeft), (R,myGapRight), (U,myGapTop), (D,myGapBottom)] $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ myLayout
         , startupHook = myStartupHook
