@@ -64,6 +64,7 @@ myStartupHook = do
   spawn "xsetroot -cursor_name left_ptr"
   spawnOnce "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
   spawn "setxkbmap -layout 'us,no' -variant colemak,colemak -option 'grp:shifts_toggle'"
+  spawn "numlockx on"
   spawnOnce "nitrogen --restore"
   spawnOnce "picom --experimental-backends"
   spawnOnce "dunst"
