@@ -18,6 +18,8 @@ import XMonad.Layout.Gaps
       gaps,
       setGaps,
       GapMessage(DecGap, ToggleGaps, IncGap) )
+import XMonad.Layout.ThreeColumns
+
 
 myBorderWidth   = 2
 myGapLeft = 10
@@ -152,7 +154,7 @@ rofi_launcher = spawn "rofi -show drun -icon-theme 'Papirus' -show-icons"
 flameshotcmd = spawn "flameshot gui"
 shootercmd = spawn "xfce4-screenshooter"
 
-myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full)
+myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full ||| ThreeCol 1 (3/100) (1/2))
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
