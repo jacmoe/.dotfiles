@@ -5,8 +5,10 @@ fish_add_path -g ~/.local/bin ~/bin ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin
 set -gx PROJECT_PATHS ~/projects
 
 set -Ux PAGER less
-set -Ux EDITOR emacsclient -c -nw
-set -Ux VISUAL emacsclient -c
+#set -Ux EDITOR emacsclient -c -nw
+#set -Ux VISUAL emacsclient -c
+set -Ux EDITOR micro
+set -Ux VISUAL micro
 set -Ux NNN_PLUG 'f:finder;v:imgview'
 set -Ux NNN_OPENER '/home/moena/.local/bin/nnnopen'
 set -Ux NNN_BMS "d:$HOME/Documents;p:$HOME/projects/moena-dwm;D:$HOME/Downloads/;b:$HOME/builds/dwm/finaldwm;c:$HOME/.config;l:$HOME/.local/share"
