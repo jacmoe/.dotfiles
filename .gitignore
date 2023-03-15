@@ -35,3 +35,4 @@ fish/.config/fish/functions/_fzf_wrapper.fish
 micro/.config/micro/buffers/history
 lagrange/.config/lagrange/idents.lgr
 lagrange/.config/lagrange/state.lgr
+localbin/.local/bin/gmcapsuled

@@ -20,7 +20,6 @@ import XMonad.Layout.Gaps
       GapMessage(DecGap, ToggleGaps, IncGap) )
 import XMonad.Layout.ThreeColumns
 
-
 myBorderWidth   = 2
 myGapLeft = 10
 myGapRight = 10
