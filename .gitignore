@@ -36,3 +36,7 @@ micro/.config/micro/buffers/history
 lagrange/.config/lagrange/idents.lgr
 lagrange/.config/lagrange/state.lgr
 localbin/.local/bin/gmcapsuled
+lagrange/.config/lagrange/idents
+lagrange/.config/lagrange/sitespec.ini
+lagrange/.config/lagrange/trusted.2.txt
+lagrange/.config/lagrange/visited.2.txt
