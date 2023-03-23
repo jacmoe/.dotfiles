@@ -1,3 +1,5 @@
 #!/usr/bin/bash
 search=$1
 awk -v input="$search" -F ',' '$0 ~ input {print $1 $2 $3}' /home/moena/Codes/logins.csv
+
+awk -v input="$search" -F ',' '$0 ~ input {print $3}' /home/moena/Codes/logins.csv | xargs | tr -d \\n | xclip -sel clip
