@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 echo "Backing up Doom-Emacs directories ..."
+echo "Removing Hotel California copy ..."
 rm -rf ~/.doom_backup/doom-emacs-cpy/
 rm -rf ~/.doom_backup/doom-d-cpy/
+echo "Removing Programming Emacs copy ..."
 rm -rf ~/.doom_backup/pdoom-emacs-cpy/
 rm -rf ~/.doom_backup/p-d-cpy/
 echo "Copying Hotel California ..."
