@@ -51,7 +51,7 @@ abbr -a miterm --position anywhere micro ~/.config/wezterm/wezterm.lua
 abbr -a mifish --position anywhere micro ~/.config/fish/config.fish
 abbr -a mimi --position anywhere micro ~/.config/micro/settings.json
 abbr -a mimib --position anywhere micro ~/.config/micro/bindings.json
-
+abbr -a mibook --position anywhere micro ~/.config/rofi/bookmarks/.bookmarks
 
 abbr -a nifish --position anywhere nvim ~/.config/fish/config.fish
 abbr -a nimi --position anywhere nvim ~/.config/micro/settings.json
