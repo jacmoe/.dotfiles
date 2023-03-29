@@ -14,5 +14,5 @@ return {
   --color_scheme = "Bim (Gogh)",
   color_scheme = "shades-of-purple",
   --color_scheme = "Sakura",
-  window_background_opacity = 0.74,
+  window_background_opacity = 0.84,
 }

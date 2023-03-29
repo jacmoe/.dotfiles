@@ -67,7 +67,7 @@ myStartupHook = do
   spawn "setxkbmap -layout 'us,no' -variant colemak,colemak -option 'grp:shifts_toggle'"
   spawn "numlockx on"
   spawnOnce "nitrogen --restore"
-  spawnOnce "picom --experimental-backends"
+  spawnOnce "picom"
   spawnOnce "dunst"
   setWMName "LG3D"
   spawn "xdotool key Super+w"
