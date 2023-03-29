@@ -41,3 +41,9 @@ lagrange/.config/lagrange/sitespec.ini
 lagrange/.config/lagrange/trusted.2.txt
 lagrange/.config/lagrange/visited.2.txt
 dosbox/.dosbox/capture
+xmonad/.config/xmonad/build-x86_64-linux
+xmonad/.config/xmonad/xmonad-x86_64-linux
+xmonad/.config/xmonad/xmonad.errors
+localbin/.local/bin/pylupdate5
+localbin/.local/bin/pyrcc5
+localbin/.local/bin/pyuic5

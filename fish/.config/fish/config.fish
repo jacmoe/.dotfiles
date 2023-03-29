@@ -1,8 +1,9 @@
 # Suppress fish's intro message
 set fish_greeting
 
-fish_add_path -g ~/.local/bin ~/bin ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin
+fish_add_path -g ~/.local/bin ~/bin ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin
 set -gx PROJECT_PATHS ~/projects
+set -gx GOPATH ~/go
 
 set -Ux PAGER less
 #set -Ux EDITOR emacsclient -c -nw
