@@ -16,7 +16,6 @@ set -Ux NNN_BMS "d:$HOME/Documents;p:$HOME/projects/moena-dwm;D:$HOME/Downloads/
 set -Ux FZF_DEFAULT_OPTS "--layout=reverse --height 40%"
 set -Ux NNN_USE_EDITOR 1
 
-abbr -a yay paru
 abbr -a sudo doas
 abbr -a ls lsd -tF
 abbr -a l lsd -tF
@@ -39,14 +38,9 @@ abbr -a docs cd ~/Documents
 abbr -a doomdir cd ~/.doom.d
 abbr -a skriv cd ~/Dropbox/skriv
 abbr -a nvconf cd ~/.config/nvim
-abbr -a dwmdir cd ~/builds/dwm/finaldwm
 
 abbr -a maindoom source ~/main_doom.sh
 abbr -a progdoom source ~/prog_doom.sh
-
-abbr -a pacup sudo pacman -Syu
-abbr -a yayup yay -Syu
-abbr -a pacinstall sudo pacman -S
 
 abbr -a mi --position anywhere micro
 abbr -a n n -Rd
