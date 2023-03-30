@@ -47,3 +47,7 @@ xmonad/.config/xmonad/xmonad.errors
 localbin/.local/bin/pylupdate5
 localbin/.local/bin/pyrcc5
 localbin/.local/bin/pyuic5
+xmonad/.config/xmonad/dist-newstyle
+xmonad/.config/xmonad/.ghc.environment.x86_64-linux-9.2.5
+xmonad/.config/xmonad/xmonad-contrib
+xmonad/.config/xmonad/xmonad

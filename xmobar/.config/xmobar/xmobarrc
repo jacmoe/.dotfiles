@@ -1,7 +1,7 @@
 Config { 
 
    -- appearance
-     font =         "Overpass Mono 10"
+     font =         "xft:Fira Mono:pixelsize=16:antialias=true:hinting=true"
    , bgColor =      "#222222"
    , fgColor =      "#ffffff"
    , position =     TopSize C 100 36
