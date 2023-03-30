@@ -19,6 +19,7 @@ import XMonad.Layout.Gaps
       setGaps,
       GapMessage(DecGap, ToggleGaps, IncGap) )
 import XMonad.Layout.ThreeColumns
+import XMonad.Hooks.WindowSwallowing
 
 myBorderWidth   = 2
 myGapLeft = 10
@@ -173,6 +174,7 @@ main = do
     xmonad $ fullscreenSupport $ docks def
         { manageHook = myManageHook <+> manageHook def -- make sure to include myManageHook definition from above
         , layoutHook = gaps [(L,myGapLeft), (R,myGapRight), (U,myGapTop), (D,myGapBottom)] $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ myLayout
+        , handleEventHook = swallowEventHook (className =? "org.wezfurlong.wezterm") (return True)
         , startupHook = myStartupHook
         , terminal = myTerminal
         , workspaces = withScreens 2 ["1", "2", "3"]
