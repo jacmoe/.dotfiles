@@ -1,7 +1,7 @@
 # Suppress fish's intro message
 set fish_greeting
 
-fish_add_path -g ~/.local/bin ~/bin ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin
+fish_add_path -g ~/.local/bin ~/bin ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin ~/odin/Odin
 set -gx PROJECT_PATHS ~/projects
 set -gx GOPATH ~/go
 
@@ -25,6 +25,7 @@ abbr -a q exit
 abbr -a weather wego
 abbr -a nemacs emacsclient -c -nw
 
+abbr -a fedoraup doas dnf upgrade --refresh
 
 abbr -a lg lazygit
 abbr gal nsxiv -f .
