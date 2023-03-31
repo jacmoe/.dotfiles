@@ -68,12 +68,9 @@ myStartupHook = do
   spawn "numlockx on"
   spawnOnce "nitrogen --restore"
   spawnOnce "ibus-daemon -drxR"
-  --spawnOnce "picom"
-  --spawnOnce "dunst"
   setWMName "LG3D"
   spawn "xdotool key Super+w"
   spawn "xdotool key Super+1"
-  setDefaultCursor xC_left_ptr
 
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
