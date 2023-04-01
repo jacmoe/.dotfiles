@@ -63,11 +63,8 @@ myManageHook = composeAll
     ]
 
 myStartupHook = do
-  spawnOnce "/usr/libexec/polkit-gnome-authentication-agent-1 &"
+  spawn "~/.local/bin/auto_start"
   spawn "setxkbmap -layout 'us,no' -variant colemak,colemak -option 'grp:shifts_toggle'"
-  spawn "numlockx on"
-  spawnOnce "nitrogen --restore"
-  spawnOnce "ibus-daemon -drxR"
   setWMName "LG3D"
   spawn "xdotool key Super+w"
   spawn "xdotool key Super+1"
