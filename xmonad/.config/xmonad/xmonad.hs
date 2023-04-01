@@ -63,8 +63,8 @@ myManageHook = composeAll
     ]
 
 myStartupHook = do
-  spawn "~/.local/bin/auto_start"
-  spawn "setxkbmap -layout 'us,no' -variant colemak,colemak -option 'grp:shifts_toggle'"
+  spawnOnce "~/.local/bin/auto_start"
+  spawnOnce "~/.local/bin/set_keyboard"
   setWMName "LG3D"
   spawn "xdotool key Super+w"
   spawn "xdotool key Super+1"

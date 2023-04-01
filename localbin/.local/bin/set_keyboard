@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-setxkbmap -layout 'us,no' -variant colemak,colemak -option 'grp:shifts_toggle'
+setxkbmap -layout us,no -variant colemak,colemak -option 'grp:shifts_toggle'
