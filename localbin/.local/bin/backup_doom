@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+mkdir -p ~/.doom_backup
 echo "Backing up Doom-Emacs directories ..."
 echo "Removing Hotel California copy ..."
 rm -rf ~/.doom_backup/doom-emacs-cpy/
