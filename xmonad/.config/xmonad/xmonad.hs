@@ -64,8 +64,6 @@ myManageHook = composeAll
 
 myStartupHook = do
   spawnOnce "~/.local/bin/auto_start"
-  spawn "~/.local/bin/set_keyboard"
-  setWMName "LG3D"
   spawn "xdotool key Super+w"
   spawn "xdotool key Super+1"
 
