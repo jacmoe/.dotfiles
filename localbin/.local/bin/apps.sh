@@ -1,23 +1,21 @@
 #!/usr/bin/env bash
 
 function apps {
-	options="cancel\n1-firefox\n2-qutebrowser\n3-emacs\n4-nautilus\n5-lagrange\n6-zigcider\n7-amphetype\n8-testemacs"
+	options="cancel\n1-firefox\n2-emacs\n3-nautilus\n4-lagrange\n5-zigcider\n6-amphetype\n7-testemacs"
 	selected=$(echo -e $options | /home/moena/.local/bin/dwmmenu)
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
-	elif [[ $selected = "2-qutebrowser" ]]; then
-		qutebrowser
-	elif [[ $selected = "3-emacs" ]]; then
+	elif [[ $selected = "2-emacs" ]]; then
 		emacsclient -c
-	elif [[ $selected = "4-nautilus" ]]; then
+	elif [[ $selected = "3-nautilus" ]]; then
 		nautilus
-	elif [[ $selected = "5-lagrange" ]]; then
+	elif [[ $selected = "4-lagrange" ]]; then
 		lagrange
-	elif [[ $selected = "6-zigcider" ]]; then
+	elif [[ $selected = "5-zigcider" ]]; then
 		emacs --with-profile prog
-	elif [[ $selected = "7-amphetype" ]]; then
+	elif [[ $selected = "6-amphetype" ]]; then
 		$HOME/.local/bin/amphetype
-	elif [[ $selected = "8-testemacs" ]]; then
+	elif [[ $selected = "7-testemacs" ]]; then
 		emacs --with-profile test
 	fi
 }
