@@ -52,3 +52,4 @@ xmonad/.config/xmonad/.ghc.environment.x86_64-linux-9.2.5
 xmonad/.config/xmonad/xmonad-contrib
 xmonad/.config/xmonad/xmonad
 localbin/.local/bin/glances
+rofi/.config/rofi/bookmarks/.later
