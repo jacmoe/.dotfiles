@@ -23,6 +23,8 @@ abbr -a q exit
 abbr -a weather wego
 abbr -a nemacs emacsclient -c -nw
 
+abbr -a tt tt --theme gruvbox
+
 abbr -a fedoraup doas dnf upgrade --refresh
 
 abbr -a lg lazygit
