@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+gtypist -b -q -w c.typ
