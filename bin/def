@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+dict $1 > $1.txt && less $1.txt
+read -e -p "Do you want to keep the definition? " choice
+[[ "$choice" == [Yy]* ]] && echo "ok" || { rm $1.txt; echo "Deleting ..."; }
