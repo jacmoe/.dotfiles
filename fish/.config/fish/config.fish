@@ -14,7 +14,7 @@ set -Ux NNN_BMS "d:$HOME/Documents;p:$HOME/projects/moena-dwm;D:$HOME/Downloads/
 set -Ux FZF_DEFAULT_OPTS "--layout=reverse --height 40%"
 set -Ux NNN_USE_EDITOR 1
 
-abbr -a sudo doas
+#abbr -a sudo doas
 abbr -a ls lsd -tF
 abbr -a l lsd -tF
 abbr gl lsd -ltr
