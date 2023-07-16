@@ -33,7 +33,7 @@ THEME="bookmarks"
 BOOKMARKS_FILE="$HOME/.config/rofi/bookmarks/.bookmarks"
 # Note: the default browser is setted by the default envirorment variable $BROWSER
 # You can change in uncommenting the following line (the example browser is "firefox")
-BROWSER="firefox"
+BROWSER="chromium"
 
 # Check if there is a bookmarks file and if not, make one
 
