@@ -25,10 +25,10 @@ abbr -a nemacs emacsclient -c -nw
 
 abbr -a tt tt --theme gruvbox
 
-abbr -a fedoraup doas dnf upgrade --refresh
+abbr -a suseup sudo zypper up
 
 abbr -a lg lazygit
-abbr gal nsxiv -f .
+abbr gal sxiv -f .
 
 abbr -a build ./build.sh
 abbr -a serve ./serve.sh
