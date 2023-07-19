@@ -33,6 +33,7 @@ abbr gal sxiv -f .
 abbr -a build ./build.sh
 abbr -a serve ./serve.sh
 
+abbr -a dotdir cd ~/.dotfiles
 abbr -a conf cd ~/.config
 abbr -a downl cd ~/Downloads
 abbr -a docs cd ~/Documents
