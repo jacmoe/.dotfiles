@@ -6,7 +6,7 @@ function apps {
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
 	elif [[ $selected = "2-emacs" ]]; then
-		export PATH="/home/moena/.doom.emacs.d/bin:$PATH"&&export DOOMDIR="/home/moena/.doom.d"&&doom run
+		emacsclient -c
 	elif [[ $selected = "3-thunar" ]]; then
 		thunar
 	elif [[ $selected = "4-evince" ]]; then
