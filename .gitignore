@@ -54,3 +54,4 @@ xmonad/.config/xmonad/xmonad
 localbin/.local/bin/glances
 rofi/.config/rofi/bookmarks/.later
 localbin/.local/bin/typey
+bin/bin/micro

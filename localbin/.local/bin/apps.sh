@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 function apps {
-	options="cancel\n1-chromium\n2-emacs\n3-thunar\n4-evince\n5-zigcider\n6-amphetype\n7-testemacs"
+	options="cancel\n1-firefox\n2-emacs\n3-thunar\n4-evince\n5-zigcider\n6-amphetype\n7-testemacs"
 	selected=$(echo -e $options | /home/moena/.local/bin/dwmmenu)
-	if [[ $selected = "1-chromium" ]]; then
-		chromium
+	if [[ $selected = "1-firefox" ]]; then
+		firefox
 	elif [[ $selected = "2-emacs" ]]; then
 		export PATH="/home/moena/.doom.emacs.d/bin:$PATH"&&export DOOMDIR="/home/moena/.doom.d"&&doom run
 	elif [[ $selected = "3-thunar" ]]; then
