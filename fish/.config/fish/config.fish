@@ -26,6 +26,8 @@ abbr -a nemacs emacsclient -c -nw
 abbr -a tt tt --theme gruvbox
 
 abbr -a fedoraup sudo dnf upgrade --refresh
+abbr -a feinst sudo dnf install 
+abbr -a fefind sudo dnf search 
 
 abbr -a lg lazygit
 abbr gal sxiv -f .
