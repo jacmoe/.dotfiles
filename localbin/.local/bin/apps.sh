@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function apps {
-	options="cancel\n1-firefox\n2-emacs\n3-thunar\n4-okular\n5-zigcider\n6-amphetype\n7-testemacs"
+	options="cancel\n1-firefox\n2-emacs\n3-thunar\n4-okular\n5-zigcider\n6-amphetype\n7-ristretto"
 	selected=$(echo -e $options | /home/moena/.local/bin/dwmmenu)
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
@@ -15,8 +15,8 @@ function apps {
 		emacs --with-profile prog
 	elif [[ $selected = "6-amphetype" ]]; then
 		$HOME/.local/bin/amphetype
-	elif [[ $selected = "7-testemacs" ]]; then
-		emacs --with-profile test
+	elif [[ $selected = "7-ristretto" ]]; then
+		ristretto
 	fi
 }
 
