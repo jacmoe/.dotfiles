@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function apps {
-	options="cancel\n1-firefox\n2-emacs\n3-thunar\n4-okular\n5-zigcider\n6-amphetype\n7-ristretto"
+	options="cancel\n1-firefox\n2-emacs\n3-thunar\n4-okular\n5-zigcider\n6-amphetype\n7-ristretto\n8-kmag"
 	selected=$(echo -e $options | /home/moena/.local/bin/dwmmenu)
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
@@ -17,6 +17,8 @@ function apps {
 		$HOME/.local/bin/amphetype
 	elif [[ $selected = "7-ristretto" ]]; then
 		ristretto
+	elif [[ $selected = "8-kmag" ]]; then
+		kmag
 	fi
 }
 
