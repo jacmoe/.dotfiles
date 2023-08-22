@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+#mkdir /home/moena/Oldmoena
+#mkdir /home/moena/Oldhome
+sshfs jacmoe@192.168.0.105:/media/oldmoena /home/moena/Oldmoena
+sshfs jacmoe@192.168.0.105:/media/oldhome /home/moena/Oldhome
