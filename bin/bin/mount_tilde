@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+sshfs jacmoe@tilde.team:/home/jacmoe ~/tilde

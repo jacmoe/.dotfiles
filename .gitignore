@@ -58,3 +58,4 @@ bin/bin/micro
 bin/bin/hugo
 bin/bin/vale
 systemd/.config/systemd/user/default.target.wants
+bin/bin/amfora
