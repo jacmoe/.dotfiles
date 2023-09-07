@@ -22,19 +22,19 @@ elif [ "${1#*.}" = "m4a" ];then
 elif [ "$mime" = "text/html" ];then
 	${BROWSER} "$1"
 elif [ "$mime" = "text/plain" ];then
-	 $TERM emacsclient -c "$1"
+	 $TERM micro "$1"
 elif [ "${mime%/*}" = "text" ];then
-	${TERM} emacsclient -c "$1"
+	${TERM} micro "$1"
 elif [ "${mime%/*}" = "image" ];then
-	nsxiv "$1" "$PWD"
+	ristretto "$1" "$PWD"
 elif [ "$mime" = "audio/mpegapplication/octet-stream" ];then
 	${TERM} ${MUSIC} "$1"
 elif [ "$mime" = "application/pdf" ];then
-	zathura "$1"
+	okular "$1"
 elif [ "$mime" = "application/x-mobipocket-ebook" ];then
-	zathura "$1"
+	okular "$1"
 elif [ "$mime" = "application/epub+zip" ];then
-	zathura "$1"
+	okular "$1"
 elif [ "${mime%/*}" = "audio" ];then
 	${TERM} ${MUSIC} "$1"
 elif [ "${mime%/*}" = "video" ];then
