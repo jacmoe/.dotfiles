@@ -59,3 +59,7 @@ bin/bin/hugo
 bin/bin/vale
 systemd/.config/systemd/user/default.target.wants
 bin/bin/amfora
+bin/bin/lein
+localbin/.local/bin/epub2txt
+localbin/.local/bin/httpx
+localbin/.local/bin/tqdm
