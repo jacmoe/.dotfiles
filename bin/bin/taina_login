@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+ssh taina@192.168.0.105

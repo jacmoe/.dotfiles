@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+#mkdir /home/moena/Oldmoena
+#mkdir /home/moena/Oldhome
+sshfs taina@192.168.0.105:/home/taina/ /home/moena/Taina
