@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl http://api.quotable.io/random|jq '[.text=.content|.attribution=.author]' | tt -quotes -
