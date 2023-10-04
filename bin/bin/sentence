@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+for word in $1
+do
+    ipa $word
+done
