@@ -1,0 +1,5 @@
+#! /usr/bin/sh
+echo "Killing Emacs"
+emacsclient -e '(kill-emacs)'
+echo "Starting Emacs"
+systemctl start --user emacs
