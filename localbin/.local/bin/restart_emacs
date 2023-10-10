@@ -1,5 +1,5 @@
 #! /usr/bin/sh
-echo "Killing Emacs"
 emacsclient -e '(kill-emacs)'
-echo "Starting Emacs"
+echo "Emacs killed"
 systemctl start --user emacs
+echo "Emacs restarted"
