@@ -44,7 +44,8 @@ abbr -a docs cd ~/Documents
 abbr -a doomdir cd ~/.doom.d
 abbr -a skriv cd ~/Dropbox/skriv
 abbr -a nvconf cd ~/.config/nvim
-
+abbr -a ngdir cd /usr/share/nginx/html
+abbr -a ngconf cd /etc/nginx/
 abbr -a maindoom source ~/main_doom.sh
 abbr -a progdoom source ~/prog_doom.sh
 

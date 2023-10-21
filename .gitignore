@@ -63,3 +63,5 @@ bin/bin/lein
 localbin/.local/bin/epub2txt
 localbin/.local/bin/httpx
 localbin/.local/bin/tqdm
+localbin/.local/bin/phpactor
+localbin/.local/bin/phpactor.phar
