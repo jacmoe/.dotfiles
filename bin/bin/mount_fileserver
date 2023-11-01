@@ -4,3 +4,4 @@
 sshfs jacmoe@192.168.0.105:/media/oldmoena /home/moena/Oldmoena
 sshfs jacmoe@192.168.0.105:/media/oldhome /home/moena/Oldhome
 sshfs jacmoe@192.168.0.105:/home/jacmoe/Keep /home/moena/Keep
+sshfs jacmoe@192.168.0.105:/mnt/cdrom /home/moena/Dvd
