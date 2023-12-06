@@ -6,8 +6,8 @@ set -gx PROJECT_PATHS ~/projects
 set -gx GOPATH ~/go
 
 set -Ux PAGER less
-set -Ux EDITOR micro
-set -Ux VISUAL micro
+set -Ux EDITOR ne
+set -Ux VISUAL ne
 set -Ux NNN_PLUG 'f:finder;v:imgview'
 set -Ux NNN_OPENER '/home/moena/.local/bin/nnnopen'
 set -Ux NNN_BMS "d:$HOME/Documents;p:$HOME/projects/moena-dwm;D:$HOME/Downloads/;b:$HOME/builds/dwm/finaldwm;c:$HOME/.config;l:$HOME/.local/share"
@@ -52,18 +52,10 @@ abbr -a progdoom source ~/prog_doom.sh
 abbr -a mi --position anywhere micro
 abbr -a n n -Rd
 
-abbr -a mimo --position anywhere micro ~/.config/xmonad/xmonad.hs
-abbr -a mibar --position anywhere micro ~/.config/xmobar/xmobarrc
-abbr -a miterm --position anywhere micro ~/.config/wezterm/wezterm.lua
 abbr -a mifish --position anywhere micro ~/.config/fish/config.fish
-abbr -a mimi --position anywhere micro ~/.config/micro/settings.json
-abbr -a mimib --position anywhere micro ~/.config/micro/bindings.json
 abbr -a mibook --position anywhere micro ~/.config/rofi/bookmarks/.bookmarks
 
-abbr -a nifish --position anywhere nvim ~/.config/fish/config.fish
-abbr -a nimi --position anywhere nvim ~/.config/micro/settings.json
-abbr -a nimib --position anywhere nvim ~/.config/micro/bindings.json
-abbr -a nnvim nvim ~/.config/nvim/init.lua
+abbr -a nefish --position anywhere ne ~/.config/fish/config.fish
 
 abbr -a fishreload --position anywhere source ~/.config/fish/config.fish
 
