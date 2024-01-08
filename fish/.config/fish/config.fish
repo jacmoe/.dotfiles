@@ -1,9 +1,15 @@
 # Suppress fish's intro message
 set fish_greeting
 
-fish_add_path -g /usr/sbin ~/.local/bin ~/bin ~/Zotero_linux-x86_64 ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin ~/odin/Odin ~/odin/ols ~/sources/gempress /home/moena/.config/composer/vendor/bin
+fish_add_path -g /usr/sbin ~/.local/bin ~/bin ~/Zotero_linux-x86_64 ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin ~/odin/Odin ~/odin/ols ~/sources/gempress /home/moena/.config/composer/vendor/bin /home/moena/.pyenv/bin
+
 set -gx PROJECT_PATHS ~/projects
 set -gx GOPATH ~/go
+
+set -gx PYENV_ROOT /home/moena/.pyenv
+
+pyenv init - | source
+
 
 set -Ux PAGER less
 set -Ux EDITOR ne
