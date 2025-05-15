@@ -66,3 +66,6 @@ localbin/.local/bin/tqdm
 localbin/.local/bin/phpactor
 localbin/.local/bin/phpactor.phar
 ne/.ne/.history
+bin/bin/ezytdl-linux.AppImage
+bin/bin/harper-cli
+bin/bin/harper-ls
