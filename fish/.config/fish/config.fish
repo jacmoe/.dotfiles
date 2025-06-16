@@ -29,7 +29,8 @@ abbr gl lsd -ltr
 abbr -a c clear
 abbr -a q exit
 abbr -a weather wego
-abbr -a nemacs emacsclient -c -nw
+abbr -a nemacs emacs -nw
+abbr -a qui quilt
 
 abbr -a tt tt --theme gruvbox
 

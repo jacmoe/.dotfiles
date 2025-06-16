@@ -6,7 +6,7 @@ function apps {
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
 	elif [[ $selected = "2-emacs" ]]; then
-		emacsclient -c
+		emacs
 	elif [[ $selected = "3-thunar" ]]; then
 		thunar
 	elif [[ $selected = "4-okular" ]]; then
