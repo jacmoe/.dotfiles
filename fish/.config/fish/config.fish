@@ -56,6 +56,7 @@ abbr -a ngconf cd /etc/nginx/
 abbr -a maindoom source ~/main_doom.sh
 abbr -a progdoom source ~/prog_doom.sh
 abbr -a dwmdir cd ~/sources/moena-dwm/dwm
+abbr -a dwldir cd ~/sources/moena-dwl/dwl
 
 abbr -a mi --position anywhere micro
 abbr -a n n -Rd
