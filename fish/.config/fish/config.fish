@@ -59,7 +59,7 @@ abbr -a dwmdir cd ~/sources/moena-dwm/dwm
 abbr -a dwldir cd ~/sources/moena-dwl/dwl
 
 abbr -a mi --position anywhere micro
-abbr -a n n -Rd
+abbr -a n n -Rd -G
 
 abbr -a mifish --position anywhere micro ~/.config/fish/config.fish
 abbr -a mibook --position anywhere micro ~/.config/rofi/bookmarks/.bookmarks
