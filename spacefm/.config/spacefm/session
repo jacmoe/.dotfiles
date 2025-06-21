@@ -5,6 +5,8 @@
 # If you delete all session* files, SpaceFM will be reset to factory defaults.
 
 [General]
+show_thumbnail=1
+big_icon_size=64
 
 [Window]
 width=1878
@@ -65,8 +67,8 @@ main_terminal-b=2
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/moena/dokumentation////home/moena/.doom.emacs.d/static
-panel1_show-x=1
+panel1_show-s=////home/moena
+panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4
 panel1_show-b=1
@@ -86,6 +88,7 @@ main_full-key=65480
 main_full-b=2
 main_tool-child=cstm_244f3038
 root_bar-b=1
+view_thumb-b=1
 plug_cverb-b=1
 main_help-key=65470
 task_col_status-x=0
@@ -233,7 +236,7 @@ panel1_list_compact-b=2
 panel1_list_large-b=1
 panel1_show_hidden-key=104
 panel1_show_hidden-keymod=4
-panel1_show_hidden-b=1
+panel1_show_hidden-b=2
 panel1_detcol_name-x=0
 panel1_detcol_name-b=1
 panel1_detcol_size-x=1
@@ -477,4 +480,6 @@ cstm_487c597b-z=/home/moena/Pictures
 cstm_487c597b-label=Pictures
 cstm_487c597b-next=cstm_22342fa6
 cstm_487c597b-prev=cstm_46023a5b
+text_dlg-x=500
+text_dlg-y=275
 
