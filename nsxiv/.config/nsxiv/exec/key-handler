@@ -11,7 +11,7 @@ do
         "C-c")
                 echo -n "$file" | xclip -selection clipboard ;;
         "C-w")
-                nitrogen --save --set-scaled --head=1 "$file" && nitrogen --save --set-scaled --head=0 "$file"  ;;
+                nitrogen --save --set-scaled "$file" ;;
         esac
 done
 
