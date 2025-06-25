@@ -18,7 +18,7 @@ function apps {
 	elif [[ $selected = "7-ristretto" ]]; then
 		ristretto
 	elif [[ $selected = "8-kmag" ]]; then
-		kmag
+		sh -"/home/moena/.local/bin/screenshot.sh"
 	fi
 }
 
