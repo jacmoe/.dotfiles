@@ -24,7 +24,7 @@ set -Ux NNN_USE_EDITOR 1
 abbr -a cp cp -i
 alias cp="cp -i"
 #abbr -a sudo doas
-abbr -a ls lsd -tF
+abbr -a ls eza --icons=always
 abbr -a l lsd -tF
 abbr gl lsd -ltr
 abbr -a c clear
