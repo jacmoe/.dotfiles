@@ -1,5 +1,13 @@
-    keymap = {
-      manager.prepend_keymap = [
-      ];
-   };
+[mgr]
+      prepend_keymap = [
+        # Hopping
+	{ on = "e", run = "arrow prev", desc = "Previous file" },
+	{ on = "n", run = "arrow next", desc = "Next file" },
+
+        # Navigation
+	{ on = "i", run = "enter", desc = "Enter the child directory" },
+
+	{ on = "I", run = "forward", desc = "Forward to next directory" },
+      ]
+ 
 
