@@ -4,7 +4,6 @@
 
 [mgr]
 ratio          = [ 2, 4, 3 ]
-show_hidden    = true
 
 [[plugin.prepend_fetchers]]
 id   = "git"
