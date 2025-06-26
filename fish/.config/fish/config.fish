@@ -13,7 +13,7 @@ pyenv init - | source
 zoxide init fish --cmd cd | source
 
 set -Ux PAGER less
-set -Ux EDITOR emacs -nw
+set -Ux EDITOR emacsclient -c -nw
 set -Ux VISUAL emacs
 set -Ux NNN_PLUG 'f:finder;v:imgview'
 set -Ux NNN_OPENER '/home/moena/.local/bin/nnnopen'
