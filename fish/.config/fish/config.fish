@@ -12,8 +12,8 @@ pyenv init - | source
 
 
 set -Ux PAGER less
-set -Ux EDITOR ne
-set -Ux VISUAL ne
+set -Ux EDITOR emacs -nw
+set -Ux VISUAL emacs
 set -Ux NNN_PLUG 'f:finder;v:imgview'
 set -Ux NNN_OPENER '/home/moena/.local/bin/nnnopen'
 set -Ux NNN_BMS "d:$HOME/Documents;p:$HOME/projects/moena-dwm;D:$HOME/Downloads/;b:$HOME/builds/dwm/finaldwm;c:$HOME/.config;l:$HOME/.local/share"
