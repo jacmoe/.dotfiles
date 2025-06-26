@@ -8,6 +8,8 @@
 	{ on = "i", run = "enter", desc = "Enter the child directory" },
 
 	{ on = "I", run = "forward", desc = "Forward to next directory" },
+
+        # Lazygit
+        { on = ["g", "i"], run = "plugin lazygit", desc = "run lazygit" },
       ]
- 
 
