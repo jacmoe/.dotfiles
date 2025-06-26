@@ -10,6 +10,7 @@ set -gx PYENV_ROOT /home/moena/.pyenv
 
 pyenv init - | source
 
+zoxide init fish --cmd cd | source
 
 set -Ux PAGER less
 set -Ux EDITOR emacs -nw
