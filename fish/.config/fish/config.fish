@@ -31,6 +31,7 @@ abbr -a q exit
 abbr -a weather wego
 abbr -a nemacs emacs -nw
 abbr -a qui quilt
+abbr -a y yazi
 
 abbr -a tt tt --theme gruvbox
 
