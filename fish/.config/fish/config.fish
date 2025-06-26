@@ -39,7 +39,7 @@ abbr -a feinst sudo dnf install
 abbr -a fefind sudo dnf search 
 
 abbr -a lg lazygit
-abbr gal sxiv -f .
+abbr gal nsxiv -f .
 
 abbr -a build ./build.sh
 abbr -a serve ./serve.sh
