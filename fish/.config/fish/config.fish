@@ -32,7 +32,6 @@ abbr -a q exit
 abbr -a weather wego
 abbr -a nemacs emacs -nw
 abbr -a qui quilt
-abbr -a y yazi
 
 abbr -a tt tt --theme gruvbox
 
@@ -106,3 +105,8 @@ fzf_configure_bindings --history
 fzf_configure_bindings --processes
 # Ctrl+V (Variable)
 fzf_configure_bindings --variables
+
+# ZVM
+set -gx ZVM_INSTALL "$HOME/.zvm/self"
+set -gx PATH $PATH "$HOME/.zvm/bin"
+set -gx PATH $PATH "$ZVM_INSTALL/"
