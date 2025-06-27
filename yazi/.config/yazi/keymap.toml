@@ -15,6 +15,8 @@
 
         # Lazygit
         { on = ["g", "i"], run = "plugin lazygit", desc = "run lazygit" },
+        # Bunny
+        { on = ["g", "b"], run = "plugin bunny", desc = "run bunny" },
       ]
 
 [tasks]
@@ -69,3 +71,4 @@
         { on = "e", run = "arrow prev", desc = "Previous line" },
         { on = "n", run = "arrow next", desc = "Next line" },
       ]
+
