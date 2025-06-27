@@ -6,6 +6,7 @@ require("bunny"):setup({
     { key = "m",          path = "~/Music",        desc = "Music"        },
     { key = "D",          path = "~/Documents",    desc = "Documents"    },
     { key = "c",          path = "~/.config",      desc = "Config files" },
+    { key = { "p", "b" }, path = "~/projects/brandt", desc = "Brandt project"  },
     { key = { "p", "z" }, path = "~/projects/zixelwolf", desc = "Zixelwolf project"  },
     -- key and path attributes are required, desc is optional
   },
