@@ -4,6 +4,10 @@
 
 [mgr]
 ratio          = [ 2, 4, 3 ]
+sort_reverse = true
+
+[preview]
+cache_dir = "~/.cache/yazi"
 
 [[plugin.prepend_fetchers]]
 id   = "git"
