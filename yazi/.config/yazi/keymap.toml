@@ -19,7 +19,10 @@
         { on = ["g", "b"], run = "plugin bunny", desc = "run bunny" },
         # Run shell here
         { on   = "!", for  = "unix", run  = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
-      ]
+
+        # Maximize preview pane
+        { on   = "T", run  = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
+]
 
 [tasks]
       prepend_keymap = [

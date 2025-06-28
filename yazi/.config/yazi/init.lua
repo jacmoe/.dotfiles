@@ -1,4 +1,5 @@
 require("git"):setup()
+require("full-border"):setup()
 
 require("bunny"):setup({
   hops = {

@@ -8,6 +8,8 @@ sort_reverse = true
 
 [preview]
 cache_dir = "~/.cache/yazi"
+max_width  = 1000
+max_height = 1000
 
 [[plugin.prepend_fetchers]]
 id   = "git"
@@ -18,4 +20,3 @@ run  = "git"
 id   = "git"
 name = "*/"
 run  = "git"
-
