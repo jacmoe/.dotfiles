@@ -30,7 +30,7 @@ abbr gl lsd -ltr
 abbr -a c clear
 abbr -a q exit
 abbr -a weather wego
-abbr -a nemacs emacs -nw
+abbr -a nemacs emacsclient -c -nw
 abbr -a qui quilt
 
 abbr -a tt tt --theme gruvbox
@@ -64,6 +64,9 @@ abbr -a n n -Rd -G
 
 abbr -a mifish --position anywhere micro ~/.config/fish/config.fish
 abbr -a mibook --position anywhere micro ~/.config/rofi/bookmarks/.bookmarks
+
+abbr -a mefish --position anywhere msedit ~/.config/fish/config.fish
+abbr -a mebook --position anywhere msedit ~/.config/rofi/bookmarks/.bookmarks
 
 abbr -a nefish --position anywhere ne ~/.config/fish/config.fish
 
