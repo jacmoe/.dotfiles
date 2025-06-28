@@ -17,6 +17,8 @@
         { on = ["g", "i"], run = "plugin lazygit", desc = "run lazygit" },
         # Bunny
         { on = ["g", "b"], run = "plugin bunny", desc = "run bunny" },
+        # Run shell here
+        { on   = "!", for  = "unix", run  = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
       ]
 
 [tasks]
