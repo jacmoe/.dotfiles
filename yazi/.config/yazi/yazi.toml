@@ -11,6 +11,16 @@ cache_dir = "~/.cache/yazi"
 max_width  = 1000
 max_height = 1000
 
+[open]
+prepend_rules = [
+	{ mime = "image/*", use = "rifle" },
+]
+
+[opener]
+rifle = [
+	{ run = 'nsxiv-rifle "$0"', block = true },
+]
+
 [[plugin.prepend_fetchers]]
 id   = "git"
 name = "*"
