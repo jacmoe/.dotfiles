@@ -15,5 +15,16 @@ K = "search_prev"
 l = "insert_mode"
 L = "insert_at_line_start"
 
+C-n = "goto_line_start"
+C-e = "goto_line_end"
+
 [keys.insert]
 C-o = "normal_mode"
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
