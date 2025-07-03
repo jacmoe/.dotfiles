@@ -1,0 +1,9 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+email = "jacmoe.dk@gmail.com"
+
+[ui]
+pager = ":builtin"
+
+[user]
+name = "Jacob Moena"
+email = "jacmoe.dk@gmail.com"
