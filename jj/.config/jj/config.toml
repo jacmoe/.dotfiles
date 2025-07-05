@@ -3,6 +3,7 @@ email = "jacmoe.dk@gmail.com"
 
 [ui]
 pager = ":builtin"
+default-command = "log"
 
 [user]
 name = "Jacob Moena"
