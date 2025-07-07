@@ -1,7 +1,7 @@
 # Suppress fish's intro message
 set fish_greeting
 
-fish_add_path -g /usr/sbin ~/.local/bin ~/bin ~/Zotero_linux-x86_64 ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin ~/odin/Odin ~/odin/ols ~/sources/gempress /home/moena/.config/composer/vendor/bin /home/moena/.pyenv/bin /home/moena/.cargo/bin /home/moena/.nimble/bin /home/moena/.choosenim/toolchains/nim-2.2.4/bin/
+fish_add_path -g /usr/sbin ~/.local/bin ~/bin ~/Zotero_linux-x86_64 ~/zig/zig-0.11.0-dev ~/zig/zls/zig-out/bin ~/.node/bin ~/go/bin ~/odin/Odin ~/odin/ols ~/sources/gempress /home/moena/.config/composer/vendor/bin /home/moena/.pyenv/bin /home/moena/.cargo/bin /home/moena/.nimble/bin /home/moena/.choosenim/toolchains/nim-2.2.4/bin/ /home/moena/odin/
 
 set -gx PROJECT_PATHS ~/projects
 set -gx GOPATH ~/go
@@ -33,6 +33,8 @@ abbr -a weather wego
 abbr -a nemacs emacsclient -c -nw
 abbr -a qui quilt
 abbr -a nimr nim c -r src/
+abbr -a jj_point jj bookmark set --revision @- main
+abbr -a jj_push jj git push -r @-
 
 abbr -a tt tt --theme gruvbox
 
