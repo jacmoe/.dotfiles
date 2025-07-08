@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function apps {
-	options="cancel\n1-firefox\n2-emacs\n3-spacefm\n4-okular\n5-zigcider\n6-kdenlive\n7-ristretto\n8-kmag"
+	options="cancel\n1-firefox\n2-emacs\n3-spacefm\n4-okular\n5-zigcider\n6-kdenlive\n7-ristretto\n8-kate"
 	selected=$(echo -e $options | /home/moena/.local/bin/dwmmenu)
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
@@ -17,8 +17,8 @@ function apps {
 		kdenlive
 	elif [[ $selected = "7-ristretto" ]]; then
 		ristretto
-	elif [[ $selected = "8-kmag" ]]; then
-		sh -"/home/moena/.local/bin/screenshot.sh"
+	elif [[ $selected = "8-kate" ]]; then
+		kate
 	fi
 }
 
