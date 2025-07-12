@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function apps {
-	options="cancel\n1-firefox\n2-emacs\n3-spacefm\n4-okular\n5-kate\n6-zigcider\n7-ristretto\n8-kdenlive"
+	options="cancel\n1-firefox\n2-emacs\n3-spacefm\n4-okular\n5-vscode\n6-zigcider\n7-ristretto\n8-kdenlive"
 	selected=$(echo -e $options | /home/moena/.local/bin/dwmmenu)
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
@@ -11,8 +11,8 @@ function apps {
 		spacefm
 	elif [[ $selected = "4-okular" ]]; then
 		okular
-	elif [[ $selected = "5-kate" ]]; then
-		kate
+	elif [[ $selected = "5-vscode" ]]; then
+		code
 	elif [[ $selected = "6-zigcider" ]]; then
 		emacs-pgtk --with-profile prog
 	elif [[ $selected = "7-ristretto" ]]; then
