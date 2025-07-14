@@ -4,11 +4,10 @@ require("full-border"):setup()
 require("bunny"):setup({
   hops = {
     { key = "~",          path = "~",              desc = "Home"         },
-    { key = "m",          path = "~/Music",        desc = "Music"        },
-    { key = "D",          path = "~/Documents",    desc = "Documents"    },
+    { key = "O",          path = "~/odin/",        desc = "Odin"        },
     { key = "c",          path = "~/.config",      desc = "Config files" },
     { key = { "p", "b" }, path = "~/projects/brandt", desc = "Brandt project"  },
-    { key = { "p", "z" }, path = "~/projects/zixelwolf", desc = "Zixelwolf project"  },
+    { key = { "p", "o" }, path = "~/projects/odin", desc = "Odin projects"  },
     -- key and path attributes are required, desc is optional
   },
   desc_strategy = "path", -- If desc isn't present, use "path" or "filename", default is "path"
