@@ -43,7 +43,7 @@ abbr -a feinst sudo dnf install
 abbr -a fefind sudo dnf search 
 
 abbr -a lg lazygit
-abbr gal nsxiv -f .
+abbr -a gal nsxiv -f .
 
 
 abbr -a build ./build.sh
@@ -65,6 +65,7 @@ abbr -a dwldir cd ~/sources/moena-dwl/dwl
 
 abbr -a mi --position anywhere micro
 abbr -a n n -Rd -G
+abbr -a nano msedit
 
 abbr -a mifish --position anywhere micro ~/.config/fish/config.fish
 abbr -a mibook --position anywhere micro ~/.config/rofi/bookmarks/.bookmarks
