@@ -54,6 +54,7 @@ abbr -a conf cd ~/.config
 abbr -a downl cd ~/Downloads
 abbr -a docs cd ~/Documents
 abbr -a doomdir cd ~/.doom.d
+abbr -a progdir cd ~/.p.doom.d
 abbr -a skriv cd ~/Dropbox/skriv
 abbr -a nvconf cd ~/.config/nvim
 abbr -a ngdir cd /usr/share/nginx/html
