@@ -6,13 +6,13 @@ function apps {
 	if [[ $selected = "1-firefox" ]]; then
 		firefox
 	elif [[ $selected = "2-odin" ]]; then
-		emacs-pgtk --with-profile prog
+		emacs-pgtk
 	elif [[ $selected = "3-spacefm" ]]; then
 		spacefm
 	elif [[ $selected = "4-okular" ]]; then
 		okular
 	elif [[ $selected = "5-writing" ]]; then
-		emacs-pgtk
+		emacs-pgtk --with-profile write
 	elif [[ $selected = "6-ristretto" ]]; then
 		ristretto
 	fi
