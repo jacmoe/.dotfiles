@@ -66,15 +66,13 @@ abbr -a dwldir cd ~/sources/moena-dwl/dwl
 
 abbr -a mi --position anywhere micro
 abbr -a n n -Rd -G
-abbr -a nano msedit
+abbr -a nano emacsclient -c -nw
 
 abbr -a mifish --position anywhere micro ~/.config/fish/config.fish
 abbr -a mibook --position anywhere micro ~/.config/rofi/bookmarks/.bookmarks
-
+abbr -a nefish  --position anywhere emacsclient -c -nw ~/.config/fish/config.fish
 abbr -a mefish --position anywhere msedit ~/.config/fish/config.fish
 abbr -a mebook --position anywhere msedit ~/.config/rofi/bookmarks/.bookmarks
-
-abbr -a nefish --position anywhere ne ~/.config/fish/config.fish
 
 abbr -a fishreload --position anywhere source ~/.config/fish/config.fish
 
